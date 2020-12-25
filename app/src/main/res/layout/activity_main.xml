@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <ImageButton
+        android:id="@+id/imgButton01"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/p7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:id="@+id/imgButton02"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/p3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="10dp"/>
+
+    <ImageButton
+        android:id="@+id/imgButton03"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/p5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"/>
+
+    <ImageButton
+        android:id="@+id/imgButton04"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/p6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:id="@+id/StandardMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标准地图"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/SatelliteMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卫星地图"
+        android:layout_alignTop="@id/StandardMap"
+        android:layout_toRightOf="@id/StandardMap"/>
+
+    <Button
+        android:id="@+id/drawLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绘制轨迹"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"/>
+
+</RelativeLayout>
