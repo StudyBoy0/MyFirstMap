@@ -1,13 +1,12 @@
-package com.example.mymap;
+package com.example.mymap.network.service;
+
+import com.example.mymap.entity.GPSResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
 
 public interface GPSService {
     @GET("pro/gps.json")
     Call<GPSResponse> requestGPS();
 
-    @GET("users/{user}/repos")
-    Call<String> listRepos(@Path("user")String user);
 }

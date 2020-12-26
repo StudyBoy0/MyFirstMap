@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/date_tx_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="打点时间："/>
+
+    <TextView
+        android:id="@+id/date_size_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/date_tx_hint"
+        app:layout_constraintStart_toStartOf="@id/date_tx_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="9dp"
+        android:text="记录点数量："
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/date_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/date_tx_hint"
+        app:layout_constraintStart_toEndOf="@id/date_tx_hint"
+        tools:text="2020-12-25"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/date_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/date_size_hint"
+        app:layout_constraintStart_toEndOf="@id/date_size_hint"
+        tools:text="10个"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.mymap;
+package com.example.mymap.callback;
 
 public interface CallBack<T> {
     void success(T result) ;

@@ -1,4 +1,6 @@
-package com.example.mymap;
+package com.example.mymap.entity;
+
+import com.example.mymap.entity.GPSEntity;
 
 public class GPSResponse {
     private GPSEntity GPS;

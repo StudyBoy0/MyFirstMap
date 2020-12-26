@@ -1,4 +1,4 @@
-package com.example.mymap;
+package com.example.mymap.entity;
 
 public class GPSEntity {
     private String Lat;

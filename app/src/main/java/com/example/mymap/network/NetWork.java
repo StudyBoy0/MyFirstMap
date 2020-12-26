@@ -1,7 +1,11 @@
-package com.example.mymap;
+package com.example.mymap.network;
 
-import android.net.Network;
 import android.util.Log;
+
+import com.example.mymap.callback.CallBack;
+import com.example.mymap.entity.GPSEntity;
+import com.example.mymap.entity.GPSResponse;
+import com.example.mymap.network.service.GPSService;
 
 import retrofit2.Call;
 import retrofit2.Callback;
